@@ -20,6 +20,7 @@ Route::group(['prefix' => 'app'], function () {
     Route::any('discover', 'WebAppController@discover');
     Route::any('lan-discover', 'WebAppController@lanDiscover');
     Route::any('download', 'WebAppController@download');
+    Route::post('deploy_in_lan', 'PinnedWebAppController@deploy');
 });
 
 Route::group(['prefix' => 'sync'], function () {
